@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" prefHeight="150.0" prefWidth="400.0" style="-fx-background-color: light grey;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LogInController">
+   <children>
+      <HBox alignment="CENTER" layoutX="124.0" prefHeight="40.0" prefWidth="153.0">
+         <children>
+            <Label fx:id="labelLogIn" contentDisplay="CENTER" text="Log In" />
+         </children>
+      </HBox>
+      <VBox alignment="CENTER" layoutX="1.0" layoutY="34.0" prefHeight="137.0" prefWidth="400.0">
+         <children>
+            <Label fx:id="labelUsername" text="Username" />
+            <TextField fx:id="textUsername" alignment="CENTER" maxWidth="-Infinity" prefWidth="250.0" />
+            <Label fx:id="labelPassword" text="Password" />
+            <TextField fx:id="textPassword" alignment="CENTER" maxWidth="-Infinity" prefWidth="250.0" />
+            <HBox alignment="CENTER" prefHeight="40.0" prefWidth="400.0">
+               <children>
+                  <Button fx:id="buttonLogIn" maxWidth="-Infinity" mnemonicParsing="false" onAction="#onActionLogInButton" prefWidth="68.0" text="LOG IN">
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="buttonCancel" mnemonicParsing="false" onAction="#onActionCancelButton" text="CANCEL" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
